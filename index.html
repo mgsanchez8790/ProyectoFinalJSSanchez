@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Venta de Celulares</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<h1>SUPER OFERTAS</h1>
+<div id="celulares-lista" class="container">
+  <!-- Celulares -->
+  <div class="celular">
+    <img src="Multimedia/galaxy_s20.jpeg" alt="Samsung Galaxy S20">
+    <h3>Samsung Galaxy S20</h3>
+    <p>Precio: $1000</p>
+    <button onclick="agregarAlCarrito(1)">Agregar al carrito</button>
+  </div>
+  
+  <div class="celular">
+    <img src="Multimedia/12.jpg" alt="iPhone 12">
+    <h3>Apple iPhone 12</h3>
+    <p>Precio: $1200</p>
+    <button onclick="agregarAlCarrito(2)">Agregar al carrito</button>
+  </div>
+  
+  <div class="celular">
+    <img src="Multimedia/readmi.jpg" alt="Xiaomi Redmi Note 9">
+    <h3>Xiaomi Redmi Note 9</h3>
+    <p>Precio: $500</p>
+    <button onclick="agregarAlCarrito(3)">Agregar al carrito</button>
+  </div>
+
+  <div class="celular">
+    <div class="video-container">
+        <video id="video-player" controls>
+            <source src="Multimedia/SUPER OFERTAS TIENDA.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <h3>Video Promocional</h3>
+    <button onclick="toggleVideo()">Reproducir/Pausar</button>
+  </div>
+
+</div>
+<footer>
+  <div class="footer-content">
+    <p>Contacto: ventas@superofertas.com</p>
+    <p>Dirección: Av. Maipu 410. Córdoba</p>
+  </div>
+  <div class="copyright">
+    <p>&copy; 2024 Super Ofertas. Todos los derechos reservados.</p>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

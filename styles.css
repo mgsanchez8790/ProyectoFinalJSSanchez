@@ -1,0 +1,107 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    grid-column: 1 / -1; /* Ocupa todas las columnas disponibles */
+}
+
+#celulares-lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    grid-column: span 3; /* Ocupa 3 de las 4 columnas disponibles */
+}
+
+.celular, .video-container {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.celular {
+    width: calc(25% - 20px); /* Ancho de una cuarta parte de la cuadrícula, menos el margen */
+}
+
+.celular img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.celular h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.celular p {
+    margin: 10px 0;
+    color: #666;
+}
+
+.celular button {
+    background-color: #FF9900;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.celular button:hover {
+    background-color: #FF8800;
+}
+
+/* Estilos del footer */
+footer {
+    background-color: #011427;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    grid-column: 1 / -1; /* Ocupa todas las columnas disponibles */
+}
+
+.footer-content {
+    margin-bottom: 20px;
+}
+
+.footer-content p {
+    margin: 5px 0;
+}
+
+.copyright p {
+    font-size: 14px;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* Proporción de aspecto 16:9 para videos */
+    overflow: hidden;
+    background-color: #000;
+    grid-column: span 1; /* Ocupa una sola columna */
+}

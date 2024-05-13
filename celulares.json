@@ -1,0 +1,5 @@
+[
+    { "id": 1, "marca": "Samsung", "modelo": "Galaxy S20", "precio": 1000 },
+    { "id": 2, "marca": "Apple", "modelo": "iPhone 12", "precio": 1200 },
+    { "id": 3, "marca": "Xiaomi", "modelo": "Redmi Note 9", "precio": 500 }
+]
